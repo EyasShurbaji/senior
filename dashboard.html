@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Dashboard</title>
+<link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Website Dashboard</h1>
+    </div>
+
+    <div class="items">
+        <h2>Items <button onclick="addItem()">Add Item</button></h2>
+        <!-- Items will be added dynamically -->
+    </div>
+
+    <div class="edit-screen">
+        <div class="edit-details">
+            <label for="editName">Item Name:</label>
+            <input type="text" id="editName"><br><br>
+            <label for="editDescription">Item Description:</label>
+            <textarea id="editDescription"></textarea><br><br>
+            <label for="editPrice">Item Price:</label>
+            <input type="text" id="editPrice"><br><br>
+            <label for="editImage">Image URL:</label>
+            <input type="text" id="editImage"><br><br>
+            <button onclick="saveEdit()">Save</button>
+            <button onclick="cancelEdit()">Cancel</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel">
+            <h2>Users</h2>
+            <p>View and manage user accounts.</p>
+            <a href="users.html">Go to Users</a>
+        </div>
+        <div class="panel">
+            <h2>Products</h2>
+            <p>Manage your products and inventory.</p>
+            <a href="products.html">Go to Products</a>
+        </div>
+        <div class="panel">
+            <h2>Settings</h2>
+            <p>Update your website settings.</p>
+            <a href="settings.html">Go to Settings</a>
+        </div>
+    </div>
+    
+    <script src="dash.js"></script>
+</body>
+</html>
